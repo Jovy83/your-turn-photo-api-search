@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 16px;
+}
+
+header {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero-background-div {
+  overflow: hidden;
+}
+
+.hero-background-div > img {
+  width: 100%;
+}
+
+.hero-header-div {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.hero-header-div > h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.hero-header-div form {
+  text-align: center;
+}
+
+.hero-header-div input {
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+main {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.photos-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.photos-div > .photo-div {
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.photos-div > .photo-div > img {
+  width: 90%;
+}
+
+.photos-div > .photo-div > h4 {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  bottom: 4px;
+  text-align: center;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .hero-header-div {
+    width: 50%;
+  }
+
+  .hero-header-div input {
+    padding: 1rem;
+  }
+
+  .photos-div > .photo-div {
+    width: 33%;
+  }
+}
