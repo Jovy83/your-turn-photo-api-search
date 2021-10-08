@@ -1,4 +1,4 @@
-const API_KEY = 'YOURAPIKEY';
+const API_KEY = 'API_KEY';
 const baseUrl = 'https://api.pexels.com/v1/search';
 
 const searchForm = document.getElementById('search-form');
@@ -7,8 +7,6 @@ const photosDiv = document.getElementById('photos-container');
 
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
-
-  console.log(`${baseUrl}?query=${searchTextbox.value}&orientation=square`);
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
