@@ -14,25 +14,20 @@ h1 {
 }
 
 header {
-  position: relative;
   margin-bottom: 2rem;
 }
 
 .hero-background-div {
-  overflow: hidden;
-}
-
-.hero-background-div > img {
-  width: 100%;
+  background-image: url('/assets/hero.jpeg');
+  height: 15rem;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-header-div {
-  position: absolute;
   width: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
 }
 
 .hero-header-div > h1 {
@@ -88,6 +83,10 @@ main {
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 24px;
+  }
+
+  .hero-background-div {
+    height: 20rem;
   }
 
   .hero-header-div {
